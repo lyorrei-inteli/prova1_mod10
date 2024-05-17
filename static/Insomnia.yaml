@@ -1,0 +1,185 @@
+_type: export
+__export_format: 4
+__export_date: 2024-05-17T12:52:47.355Z
+__export_source: insomnia.desktop.app:v9.1.0
+resources:
+  - _id: req_dfc24732e70346c4ab17579defa8779a
+    parentId: wrk_56d0f6dc883445269c0079ccc910e5bc
+    modified: 1715949665021
+    created: 1715949581910
+    url: http://localhost:5000/pedidos
+    name: Get pedidos
+    description: ""
+    method: GET
+    body: {}
+    preRequestScript: ""
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.1.0
+    authentication: {}
+    metaSortKey: -1715949581910
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: wrk_56d0f6dc883445269c0079ccc910e5bc
+    parentId: null
+    modified: 1715949577424
+    created: 1715949577424
+    name: prova1_mod10
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_c46be918ac67441d8f515c479d97addd
+    parentId: wrk_56d0f6dc883445269c0079ccc910e5bc
+    modified: 1715949899682
+    created: 1715949805684
+    url: http://localhost:5000/novo
+    name: Create pedido
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"user_name": "Murilo",
+        	"user_email": "murilo@gmail.com",
+        	"description": "Esse é um novo pedido"
+        }
+    preRequestScript: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/9.1.0
+    authentication: {}
+    metaSortKey: -1715672618308.5
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_f824e9e917fe4ca8a862c8a5804d4238
+    parentId: wrk_56d0f6dc883445269c0079ccc910e5bc
+    modified: 1715949979569
+    created: 1715949678364
+    url: http://localhost:5000/pedidos/:id
+    name: Get one pedido
+    description: ""
+    method: GET
+    body: {}
+    preRequestScript: ""
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.1.0
+    authentication: {}
+    metaSortKey: -1715395654707
+    isPrivate: false
+    pathParameters:
+      - name: id
+        value: "1"
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_2398a0b68f07474f93bf6fce3f1bef0a
+    parentId: wrk_56d0f6dc883445269c0079ccc910e5bc
+    modified: 1715950031443
+    created: 1715949777315
+    url: http://localhost:5000/pedidos/:id
+    name: Edit pedido
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"user_name": "Rod"
+        }
+    preRequestScript: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/9.1.0
+    authentication: {}
+    metaSortKey: -1715118691105.5
+    isPrivate: false
+    pathParameters:
+      - name: id
+        value: "1"
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_1ca35029e35042caac4aad952eec03d7
+    parentId: wrk_56d0f6dc883445269c0079ccc910e5bc
+    modified: 1715950053124
+    created: 1715950050289
+    url: http://localhost:5000/pedidos/:id
+    name: Delete pedido
+    description: ""
+    method: DELETE
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"user_name": "Rod"
+        }
+    preRequestScript: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/9.1.0
+    authentication: {}
+    metaSortKey: -1714980209304.75
+    isPrivate: false
+    pathParameters:
+      - name: id
+        value: "1"
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_c5e2366bfd9afb98062b9d777447c52be73958ca
+    parentId: wrk_56d0f6dc883445269c0079ccc910e5bc
+    modified: 1715949577425
+    created: 1715949577425
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1715949577425
+    _type: environment
+  - _id: jar_c5e2366bfd9afb98062b9d777447c52be73958ca
+    parentId: wrk_56d0f6dc883445269c0079ccc910e5bc
+    modified: 1715949577426
+    created: 1715949577426
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
